@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo-img" href="#" aria-label="Переход на главную страницу"></a>
+      <a class="logo-text" href="#" aria-label="Переход на главную страницу"></a>
+      <button class="nav-menu" type="button" aria-label="Открыть меню"></button>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--current" href="#">Главная</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-page">
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__text">Занялся собой? Займись котом!</p>
+        <button class=" button hero__button" type="button">подобрать программу</button>
+      </div>
+      <img class="hero__img" src="#" width="552" height="499" alt="Изображение одного из продуктов компании.">
+    </section>
+    <section class="purposes">
+      <h2 class="purposes-title visually-hidden">Типы питания</h2>
+      <ul class="purposes__list">
+        <li class="purpose-card">
+          <h3 class="purpose-card__subtitle">Похудение</h3>
+          <p class="purpose-card__description">Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="purpose-card__link" href="#">каталог Slim</a>
+        </li>
+        <li class="purpose-card">
+          <h3 class="purpose-card__subtitle">Набор массы</h3>
+          <p class="purpose-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="purpose-card__link" href="#">каталог Pro</a>
+        </li>
+      </ul>
+    </section>
+    <section class="advantages">
+      <h2 class="advantages-title visually-hidden">Преимущества данного продукта</h2>
+      <ul class="advantages__list">
+        <li class="advantage-item">
+          <p class="advantage-item__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком и&nbsp;готово.</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Замените один-два приема обычной еды на&nbsp;наше функциональное питание.</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
+    <section class="example">
+      <h2 class="example-title">Живой пример</h2>
+      <div class="example__description">
+        <p class="example__text">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой
+          обычный корм на&nbsp;Cat Energy Slim. Отличный результат
+          без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих
+          привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.</p>
+        <ul class="results-list">
+          <li class="result-item">
+            <span class="result">5&nbsp;КГ</span>
+            <span class="result-text">снижение веса</span>
+          </li>
+          <li class="result-item">
+            <span class="result">60&nbsp;ДНЕЙ</span>
+            <span class="result-text">затрачено времени</span>
+          </li>
+        </ul>
+        <p class="example__costs">Затраты на питание: <span>15&nbsp;000&nbsp;РУБ.</span></p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <article class="cooperation">
+      <p class="cooperation__text"></p>
+      <address class="cooperation__address"></address>
+    </article>
+    <map></map>
+    <div class="footer__elements">
+      <a class="footer-logo" href="#" aria-label="Логотип компании"></a>
+      <ul class="social-links">
+        <li class="social-links__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу в контакте."></a></li>
+        <li class="social-links__item"><a class="social-link social-link-youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
+        <li class="social-links__item"><a class="social-link social-link-telegram" href="#" aria-label="Переход на страницу в телеграм."></a></li>
+      </ul>
+      <a class="footer-link" href="#">
+        <span>HTML Academy.</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
