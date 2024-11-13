@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -38,6 +42,11 @@
         <button class=" button hero__button" type="button">подобрать программу</button>
       </div>
       <img class="hero__img" src="#" width="552" height="499" alt="Изображение одного из продуктов компании.">
+      <picture>
+        <source width="557" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero@1x.png 1x, images/hero@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x">
+        <img src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png" width="280" height="270" alt="Изображение одного из продуктов компании.">
+      </picture>
     </section>
     <section class="purposes">
       <h2 class="purposes-title visually-hidden">Типы питания</h2>
@@ -72,8 +81,24 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example-title">Живой пример</h2>
+      <div class="example-slider">
+        <div class="example-slider__container">
+          <div class="example__slide example__slide--before">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slide-before-tablet@1x.png 1x, images/slide-before-tablet@2x.png 2x">
+              <img src="images/slide-before-mobile@1x.png" srcset="images/slide-before-mobile@2x.png" width="280" height="256" alt="Фото котика до похудения.">
+            </picture>
+          </div>
+          <div class="example__slide example__slide--after">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x">
+              <img src="images/slide-after-mobile@1x.png" srcset="images/slide-after-mobile@2x.png" width="280" height="256" alt="Фото котика после похудения.">
+            </picture>
+          </div>
+        </div>
+      </div>
       <div class="example__description">
+        <h2 class="example-title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой
           обычный корм на&nbsp;Cat Energy Slim. Отличный результат
           без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих
@@ -94,10 +119,12 @@
   </main>
   <footer class="footer">
     <article class="cooperation">
-      <p class="cooperation__text"></p>
-      <address class="cooperation__address"></address>
+      <h4 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h4>
+      <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
+        <span>Санкт-Петербург</span>
+      </address>
     </article>
-    <map></map>
+    <map name="map"></map>
     <div class="footer__elements">
       <a class="footer-logo" href="#" aria-label="Логотип компании"></a>
       <ul class="social-links">
