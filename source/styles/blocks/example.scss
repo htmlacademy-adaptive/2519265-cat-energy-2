@@ -1,0 +1,32 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__text {
+  color: $special_dark-grey;
+}
+
+.result {
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $dark-color;
+  border: 1px solid $special_grey;
+}
+
+.result-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: $special_dark-grey;
+}
+
+.example__costs {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $dark-color;
+}

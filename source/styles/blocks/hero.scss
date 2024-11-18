@@ -1,0 +1,19 @@
+
+.hero__title {
+  line-height: 36px;
+  color: $light-color;
+}
+
+.hero__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-color;
+}
+
+.hero__content {
+  background-image: url("../../images/index-background-mobile@2x.png");
+  background-blend-mode: overlay;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

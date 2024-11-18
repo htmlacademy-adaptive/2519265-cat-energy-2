@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -19,12 +19,12 @@
       <a class="logo-text" href="#" aria-label="Переход на главную страницу"></a>
       <button class="nav-menu" type="button" aria-label="Открыть меню"></button>
       <nav class="nav-menu">
-        <ul class="nav-menu__list">
+        <ul class="nav-menu__list list-reset">
           <li class="nav-menu__item">
-            <a class="nav-menu__link nav-menu__link--current" href="#">Главная</a>
+            <a class="nav-menu__link" href="index.html">Главная</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link" href="./index.html">Каталог продукции</a>
+            <a class="nav-menu__link nav-menu__link--current" href="#">Каталог продукции</a>
           </li>
           <li class="nav-menu__item">
             <a class="nav-menu__link" href="#">Подбор программы</a>
@@ -35,8 +35,8 @@
   </header>
   <main class="catalog">
     <section class="catalog">
-      <h1 class="catalog__title">Каталог продукции</h1>
-      <ul class="catalog">
+      <h1 class="title catalog__title">Каталог продукции</h1>
+      <ul class="catalog-list list-reset">
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img">
             <picture>
@@ -51,7 +51,7 @@
             <p>Вкус<span>Курица</span></p>
             <p>Цена<span>700&nbsp;₽</span></p>
           </div>
-          <button class="catalog-card__button" type="button">Заказать</button>
+          <button class="button catalog-card__button" type="button">Заказать</button>
         </li>
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img">
@@ -67,7 +67,7 @@
             <p>Вкус<span>Курица</span></p>
             <p>Цена<span>1000&nbsp;₽</span></p>
           </div>
-          <button class="catalog-card__button" type="button">Заказать</button>
+          <button class="button catalog-card__button" type="button">Заказать</button>
         </li>
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img">
@@ -83,7 +83,7 @@
             <p>Вкус<span>Рыба</span></p>
             <p>Цена<span>700&nbsp;₽</span></p>
           </div>
-          <button class="catalog-card__button" type="button">Заказать</button>
+          <button class="button catalog-card__button" type="button">Заказать</button>
         </li>
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img">
@@ -98,7 +98,7 @@
             <p>Масса<span>1000&nbsp;г</span></p>
             <p>Вкус<span>Рыба</span></p>
             <p>Цена<span>1000&nbsp;₽</span></p>
-            <button class="catalog-card__button" type="button">Заказать</button>
+            <button class="button catalog-card__button" type="button">Заказать</button>
           </div>
         </li>
         <li class="catalog-card catalog__card">
@@ -115,7 +115,7 @@
             <p>Вкус<span>Гречка</span></p>
             <p>Цена<span>400&nbsp;₽</span></p>
           </div>
-          <button class="catalog-card__button" type="button">Заказать</button>
+          <button class="button catalog-card__button" type="button">Заказать</button>
         </li>
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img">
@@ -131,7 +131,7 @@
             <p>Вкус<span>Гречка</span></p>
             <p>Цена<span>700&nbsp;₽</span></p>
           </div>
-          <button class="catalog-card__button" type="button">Заказать</button>
+          <button class="button catalog-card__button" type="button">Заказать</button>
         </li>
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img">
@@ -147,7 +147,7 @@
             <p>Вкус<span>Рис</span></p>
             <p>Цена<span>500&nbsp;₽</span></p>
           </div>
-          <button class="catalog-card__button" type="button">Заказать</button>
+          <button class="button catalog-card__button" type="button">Заказать</button>
         </li>
         <li class="catalog-card catalog__card">
           <div class="catalog-card__img"></div>
@@ -155,14 +155,14 @@
             <h3 class="catalog-card__caption">Показать еще 100500 товаров</h3>
             На&nbsp;самом деле вкусов гораздо больше!
           </div>
-          <button class="catalog-card__button" type="button">Показать все</button>
+          <button class="catalog-card__button secondary-button" type="button">Показать все</button>
         </li>
       </ul>
     </section>
     <section class="addition">
       <h2 class="addition__title">Дополнительные товары</h2>
       <div class="addition__wrapper">
-        <ul class="addition__list">
+        <ul class="addition__list list-reset">
           <li class="addition__item">
             <span class="addition__captiion">Сахарозаменитель</span>
             <span class="addition__text">1&nbsp;упаковка (100&nbsp;г)</span>
@@ -182,7 +182,7 @@
             <button class="button addition__button" type="button">Заказать</button>
           </li>
           <li class="addition__item">
-            <span class="addition__captiion">витамины</span>
+            <span class="addition__captiion">Витамины</span>
             <span class="addition__text">1&nbsp;упаковка (30&nbsp;г)</span>
             <span class="addition__text">300&nbsp;₽</span>
             <button class="button addition__button" type="button">Заказать</button>
@@ -196,10 +196,10 @@
     <section class="subscribe">
       <h2 class="subscribe__title">Акции и&nbsp;новинки</h2>
       <div class="subscribe__wrapper">
-        <p class="subscribe__text"></p>
+        <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
           <label>
-            <input type="email" name="email" value="kuklachev@gmail.com" placeholder="Введите E-mail" required>
+            <input class="subscribe__input" type="email" name="email" value="kuklachev@gmail.com" placeholder="Введите E-mail" required>
           </label>
           <button class="button subscribe__button" type="submit">Подписаться</button>
         </form>
@@ -217,7 +217,7 @@
     <map name="map"></map>
     <div class="footer__elements">
       <a class="footer-logo" href="#" aria-label="Логотип компании"></a>
-      <ul class="social-links">
+      <ul class="social-links list-reset">
         <li class="social-links__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу в контакте."></a></li>
         <li class="social-links__item"><a class="social-link social-link-youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
         <li class="social-links__item"><a class="social-link social-link-telegram" href="#" aria-label="Переход на страницу в телеграм."></a></li>
