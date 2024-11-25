@@ -1,5 +1,26 @@
 .purpose-card {
+  position: relative;
   background-color: $basic-gray;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:first-child::before {
+    width: 50px;
+    height: 53px;
+    background-image: url("../../icons/icon-purpose-cat-sits.svg");
+  }
+
+  &:nth-child(2)::before {
+    width: 67px;
+    height: 50px;
+    background-image: url("../../icons/icon-purpose-cat-wild.svg");
+  }
 }
 
 .purpose-card__subtitle {
@@ -23,4 +44,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $dark-color;
+  padding-right: 40px;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  background-size: 32px 10px;
+  background-repeat: no-repeat;
+  background-position: center right;
 }

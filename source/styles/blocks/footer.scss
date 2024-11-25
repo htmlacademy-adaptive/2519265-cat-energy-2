@@ -8,4 +8,28 @@
   line-height: 20px;
   color: $special_dark-grey;
   text-decoration: none;
+
+  & img {
+    object-fit: contain;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-color: $special_grey;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url("../../icons/stack.svg#icon-logo-htmlacademy");
+  }
+
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:active::after {
+    background-color: $basic-green;
+    opacity: 30%;
+  }
 }

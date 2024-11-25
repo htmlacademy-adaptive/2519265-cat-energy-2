@@ -1,0 +1,12 @@
+.logo {
+  display: block;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 80%;
+  }
+}

@@ -15,8 +15,16 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <a class="logo-img" href="#" aria-label="Переход на главную страницу"></a>
-      <a class="logo-text" href="#" aria-label="Переход на главную страницу"></a>
+      <a class="logo logo-img" href="#" aria-label="Переход на главную страницу">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
+      </a>
+      <a class="logo logo-text" href="#" aria-label="Переход на главную страницу">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
+      </a>
       <button class="nav-menu" type="button" aria-label="Открыть меню"></button>
       <nav class="nav-menu">
         <ul class="nav-menu__list list-reset">
@@ -208,7 +216,7 @@
   </main>
 
   <footer class="footer">
-    <article class="cooperation">
+    <article class="cooperation cooperation--dark">
       <h4 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h4>
       <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
         <span>Санкт-Петербург</span>
@@ -216,15 +224,15 @@
     </article>
     <map name="map"></map>
     <div class="footer__elements">
-      <a class="footer-logo" href="#" aria-label="Логотип компании"></a>
+      <a class="logo footer__logo" href="#" aria-label="Логотип компании">
+        <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
+      </a>
       <ul class="social-links list-reset">
         <li class="social-links__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу в контакте."></a></li>
-        <li class="social-links__item"><a class="social-link social-link-youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
-        <li class="social-links__item"><a class="social-link social-link-telegram" href="#" aria-label="Переход на страницу в телеграм."></a></li>
+        <li class="social-links__item"><a class="social-link social-link--youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
+        <li class="social-links__item"><a class="social-link social-link--tg" href="#" aria-label="Переход на страницу в телеграм."></a></li>
       </ul>
-      <a class="footer-link" href="#">
-        <span>HTML Academy.</span>
-      </a>
+      <a class="footer-link" href="#">HTML Academy</a>
     </div>
   </footer>
 </body>

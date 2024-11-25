@@ -16,8 +16,16 @@
 <body class="page__body">
   <header class="header">
     <div class="header__inner">
-      <a class="logo-img" href="#" aria-label="Переход на главную страницу"></a>
-      <a class="logo-text" href="#" aria-label="Переход на главную страницу"></a>
+      <a class="logo logo-img" href="#" aria-label="Переход на главную страницу">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
+      </a>
+      <a class="logo logo-text" href="#" aria-label="Переход на главную страницу">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
+      </a>
       <button class="button button--menu" type="button" aria-label="Открыть меню"></button>
       <nav class="nav-menu">
         <ul class="nav-menu__list list-reset">
@@ -65,22 +73,23 @@
     <section class="advantages">
       <h2 class="advantages-title title">Как это работает</h2>
       <ul class="advantages__list list-reset">
-        <li class="advantage-item">
+        <li class="advantage-item advantage-item--leaf">
           <p class="advantage-item__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="advantage-item">
+        <li class="advantage-item advantage-item--bubbles">
           <p class="advantage-item__text">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком и&nbsp;готово.</p>
         </li>
-        <li class="advantage-item">
+        <li class="advantage-item advantage-item--tableware">
           <p class="advantage-item__text">Замените один-два приема обычной еды на&nbsp;наше функциональное питание.</p>
         </li>
-        <li class="advantage-item">
+        <li class="advantage-item advantage-item--time">
           <p class="advantage-item__text">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
     <section class="example">
       <div class="example-slider">
+        <button class="example-slider__button" type="button" aria-label="Управление слайдером"></button>
         <div class="example-slider__container">
           <div class="example__slide example__slide--before">
             <picture>
@@ -117,7 +126,7 @@
     </section>
   </main>
   <footer class="footer">
-    <article class="cooperation cooperation--dark">
+    <article class="cooperation">
       <h4 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h4>
       <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
         <span>Санкт-Петербург</span>
@@ -125,15 +134,15 @@
     </article>
     <map name="map"></map>
     <div class="footer__elements">
-      <a class="footer__logo" href="#" aria-label="Логотип компании"></a>
+      <a class="logo footer__logo" href="#" aria-label="Логотип компании">
+        <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
+      </a>
       <ul class="social-links list-reset">
         <li class="social-links__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу в контакте."></a></li>
-        <li class="social-links__item"><a class="social-link social-link-youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
-        <li class="social-links__item"><a class="social-link social-link-telegram" href="#" aria-label="Переход на страницу в телеграм."></a></li>
+        <li class="social-links__item"><a class="social-link social-link--youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
+        <li class="social-links__item"><a class="social-link social-link--tg" href="#" aria-label="Переход на страницу в телеграм."></a></li>
       </ul>
-      <a class="footer-link" href="#">
-        <span>HTML Academy.</span>
-      </a>
+      <a class="footer-link" href="#">HTML Academy</a>
     </div>
   </footer>
 </body>

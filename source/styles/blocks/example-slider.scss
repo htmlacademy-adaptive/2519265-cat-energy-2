@@ -1,3 +1,68 @@
 .example-slider {
-  box-sizing: border-box;
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  right: 50%;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  transform: translate(-50%);
+  transition: all 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -17px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $light-color;
+    border: 2px solid #666666;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: -9px;
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#icon-slider-arrows");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 24px 18px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:hover::before {
+    border-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: $light-green;
+  }
+
+  &:active::before {
+    border-color: $light-green;
+  }
 }

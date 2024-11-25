@@ -1,3 +1,36 @@
+.advantage-item {
+  padding-right: 80px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.advantage-item--leaf::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+  }
+
+  &.advantage-item--bubbles::before {
+    background-image: url("../../icons/stack.svg#icon-bubbles");
+    background-size: 26px 29px;
+  }
+
+  &.advantage-item--tableware::before {
+    background-image: url("../../icons/stack.svg#icon-tableware");
+    background-size: 25px 30px;
+  }
+
+  &.advantage-item--time::before {
+    background-image: url("../../icons/stack.svg#icon-time");
+    background-size: 26px 31px;
+  }
+}
 
 .advantage-item__text {
   font-size: 14px;
