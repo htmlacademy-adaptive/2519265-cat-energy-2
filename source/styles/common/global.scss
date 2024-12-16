@@ -27,3 +27,23 @@ body {
   padding: 0;
   list-style: none;
 }
+
+.container {
+  min-width: 320px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .container {
+    padding: 0 29px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .container {
+    padding: 0;
+  }
+}

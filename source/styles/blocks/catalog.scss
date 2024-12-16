@@ -1,3 +1,29 @@
-.catalog {
-  box-sizing: border-box;
+.catalog__title {
+  margin: 0 -20px;
+  padding: 25px 20px 38px;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  font-weight: 400;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .catalog__wrapper {
+    margin-bottom: 73px;
+  }
+
+  .catalog__title {
+    padding-top: 35px;
+    border: none;
+  }
+
+  .catalog-card__description--all {
+    padding: 0 16%;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .catalog__title {
+    padding-top: 45px;
+    padding-bottom: 37px;
+  }
 }

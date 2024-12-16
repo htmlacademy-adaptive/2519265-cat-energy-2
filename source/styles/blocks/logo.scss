@@ -10,3 +10,21 @@
     opacity: 80%;
   }
 }
+
+.logo-img {
+  margin-right: 13px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .logo {
+    margin-right: 15px;
+  }
+
+  .footer__logo {
+    margin-right: 38px;
+  }
+
+  .footer__logo img {
+    display: block;
+  }
+}

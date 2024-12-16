@@ -1,4 +1,15 @@
+.cooperation {
+  background-color: $light-color;
+}
+
+.cooperation__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 0;
+}
+
 .cooperation__title {
+  margin: 0;
   font-family: $primary-font;
   font-size: 16px;
   font-weight: 400;
@@ -8,9 +19,46 @@
 }
 
 .cooperation__address {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
   color: $special_dark-grey;
+  font-style: normal;
 }
 
-.cooperation--dark {
+.catalog .cooperation--dark {
   background-color: $basic-gray;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .cooperation--dark {
+    margin: 0 -29px;
+    padding: 0 29px;
+    background-color: $basic-gray;
+  }
+
+  .cooperation__wrapper {
+    gap: 310px;
+    padding: 62px 41px 60px;
+  }
+
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .cooperation__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .cooperation__address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

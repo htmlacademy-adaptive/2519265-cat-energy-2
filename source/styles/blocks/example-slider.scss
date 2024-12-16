@@ -2,11 +2,15 @@
   position: relative;
 }
 
-.slider__button {
+.example-slider__container {
+  display: flex;
+}
+
+.example-slider__button {
   position: absolute;
-  right: 50%;
+  right: 49%;
   width: 4px;
-  height: 100%;
+  height: 102%;
   padding: 0;
   background-color: #666666;
   border: none;
@@ -17,7 +21,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: -17px;
     display: block;
     width: 40px;
@@ -31,8 +35,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 52%;
-    left: -9px;
+    top: 49%;
+    left: -8px;
     display: block;
     width: 24px;
     height: 18px;
@@ -64,5 +68,38 @@
 
   &:active::before {
     border-color: $light-green;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .example-slider__container {
+    position: relative;
+    padding-bottom: 97px;
+  }
+
+  .example-slider__container::before {
+    content: "";
+    position: absolute;
+    inset: 151px -29px 0;
+    background-color: #e2e2e2;
+    z-index: -1;
+  }
+
+  .example-slider__button {
+    left: 50%;
+  }
+
+  .example-slider__button::after {
+    top: 47%;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .example-slider {
+    max-width: 40%;
+  }
+
+  .example-slider__container::before {
+    background-color: inherit;
   }
 }

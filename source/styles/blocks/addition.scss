@@ -1,11 +1,26 @@
-.addition__title {
-  font-family: $primary-font;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
+.addition__wrapper {
+  padding-top: 25px;
+  margin-bottom: 41px;
 }
 
-.addition__captiion {
+.addition__list {
+  margin-bottom: 33px;
+}
+
+.addition__item {
+  display: grid;
+  grid-template-areas:
+    "caption caption"
+    "text    price"
+    "button  button";
+  row-gap: 11px;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.addition__caption {
+  grid-area: caption;
   font-family: $primary-font;
   font-size: 16px;
   font-weight: 400;
@@ -15,7 +30,113 @@
 }
 
 .addition__text {
+  grid-area: text;
+  justify-self: flex-start;
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
+}
+
+.addition__text--price {
+  grid-area: price;
+  justify-self: flex-end;
+}
+
+.addition__button {
+  grid-area: button;
+  padding: 10px;
+}
+
+.addition__title {
+  margin: 0;
+  padding-bottom: 35px;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .addition__wrapper {
+    padding-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .addition__title {
+    padding: 0;
+    padding-left: 41px;
+    margin-bottom: 80px;
+    font-size: 32px;
+    line-height: 32px;
+    border-bottom: none;
+  }
+
+  .addition__list {
+    margin-bottom: 73px;
+  }
+
+  .addition__item {
+    grid-template-columns: 1fr 1fr 90px;
+    grid-template-areas:
+      "caption text   price"
+      "button  button button";
+    gap: 27px 40px;
+    justify-content: end;
+    padding: 25px 38px;
+    border: 1px solid #ebebeb;
+
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+  }
+
+  .addition__caption {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .addition__text {
+    justify-self: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .addition__title {
+    padding: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .addition__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+    margin-bottom: 95px;
+  }
+
+  .addition__list {
+    margin-bottom: 0;
+  }
+
+  .addition__item {
+    display: grid;
+    grid-template-columns: 3fr 150px 1fr 1fr;
+    grid-template-areas: "caption text price button";
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .addition__text:nth-child(2n) {
+    justify-self: start;
+  }
+
+  .addition__button {
+    min-width: 244px;
+  }
 }

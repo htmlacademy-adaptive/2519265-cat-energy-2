@@ -1,3 +1,18 @@
 .catalog-list {
-  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .catalog-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 50px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .catalog-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 18px 80px;
+  }
 }
