@@ -56,8 +56,6 @@
 
 @media screen and (min-width: $tablet-width) {
   .advantages {
-    margin: 0 -29px;
-    padding: 0 29px;
     border-bottom: 1px solid #e6e6e6;
     background-color: $light-color;
   }
@@ -76,7 +74,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 77px;
+    gap: 15px 57px;
     counter-reset: item 0;
   }
 
@@ -85,6 +83,8 @@
     padding: 142px 60px 60px 0;
     padding-top: 142px;
     padding-bottom: 60px;
+    background-color: transparent;
+    z-index: 2;
 
     &::before {
       top: 30px;
@@ -93,37 +93,19 @@
     }
 
     &::after {
+      content: counter(item);
       position: absolute;
       top: -10px;
-      right: 56px;
+      right: 79px;
       display: block;
       width: 134px;
       height: 100%;
+      counter-increment: item 1;
       font-family: $primary-font;
       font-size: 280px;
       line-height: 280px;
       color: $basic-gray;
       z-index: -1;
-    }
-
-    &.advantage-item--leaf::after {
-      counter-increment: item 1;
-      content: counter(item);
-    }
-
-    &.advantage-item--bubbles::after {
-      counter-increment: item 1;
-      content: counter(item);
-    }
-
-    &.advantage-item--tableware::after {
-      counter-increment: item 1;
-      content: counter(item);
-    }
-
-    &.advantage-item--time::after {
-      counter-increment: item 1;
-      content: counter(item);
     }
   }
 
@@ -136,6 +118,8 @@
 @media screen and (min-width: $desktop-width) {
   .advantages {
     border-bottom: none;
+    margin: 0;
+    padding: 0;
   }
 
   .advantages__wrapper {
@@ -151,7 +135,7 @@
     padding-right: 0;
 
     &::after {
-      right: -6px;
+      right: 0;
     }
   }
 }

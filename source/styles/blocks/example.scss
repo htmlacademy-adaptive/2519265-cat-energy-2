@@ -7,8 +7,7 @@
 }
 
 .example__description {
-  margin: 0 -29px;
-  padding: 25px 29px 0;
+  padding-top: 25px;
 }
 
 .example-title {
@@ -34,8 +33,8 @@
 
 @media screen and (min-width: $tablet-width) {
   .example__wrapper {
-    margin: 0 -29px;
-    padding: 0 13px 45px 29px;
+    margin: 0;
+    padding: 0;
     background-color: transparent;
   }
 
@@ -70,11 +69,8 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .example__wrapper {
+  .example {
     position: relative;
-    flex-flow: row-reverse wrap;
-    justify-content: space-between;
-    gap: 30px;
 
     &::before {
       content: "";
@@ -83,16 +79,27 @@
       inset: 164px -110px 0;
       background-color: #e2e2e2;
       z-index: -1;
+      top: 164px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
     }
   }
 
+  .example__wrapper {
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
   .example__description {
-    max-width: 40%;
+    max-width: 35%;
     padding-top: 26px;
+    margin-bottom: 25px;
   }
 
   .example-title {
-    margin-bottom: 147px;
+    margin-bottom: 144px;
   }
 
   .example__text {

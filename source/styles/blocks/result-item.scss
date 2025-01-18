@@ -1,5 +1,5 @@
 
-.result__item {
+.results-list__item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   color: $dark-color;
 }
 
-.result__text {
+.results-list__text {
   position: absolute;
   bottom: -27%;
   padding: 0 4px;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  .resuits__block {
+  .resuits-block {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 162px;
@@ -45,7 +45,7 @@
     line-height: 37px;
   }
 
-  .result__text {
+  .results-list__text {
     bottom: -14%;
     padding: 0 5px;
     margin: 0;
@@ -56,13 +56,12 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .resuits__block {
+  .resuits-block {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 63px;
+    gap: 62px;
   }
 
-  .result__text {
+  .results-list__text {
     background-color: #e2e2e2;
   }
 }

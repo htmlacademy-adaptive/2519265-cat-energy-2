@@ -14,21 +14,21 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header__inner header__inner--container container">
+    <div class="header__inner container">
       <a class="logo logo-img" href="#" aria-label="Переход на главную страницу">
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <source media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
       <a class="logo logo-text" href="#" aria-label="Переход на главную страницу">
         <img src="images/logo-text.svg" width="118" height="21" alt="Логотип Cat Energy.">
       </a>
-      <button class="button button--menu" type="button" aria-label="Открыть меню">
+      <button class="button button-menu button-menu--closed button-menu--nojs" type="button" aria-label="Открыть меню">
         <span></span>
       </button>
-      <nav class="nav-menu">
+      <nav class="nav-menu nav-menu--closed nav-menu--nojs">
         <ul class="nav-menu__list list-reset">
           <li class="nav-menu__item">
             <a class="nav-menu__link" href="index.html">Главная</a>
@@ -45,9 +45,9 @@
   </header>
   <main class="catalog">
     <div class="catalog-page">
-      <div class="catalog__page container">
+      <div class="catalog__page">
         <section class="catalog">
-          <div class="catalog__wrapper">
+          <div class="catalog__wrapper container">
             <h1 class="title catalog__title">Каталог продукции</h1>
             <ul class="catalog-list list-reset">
               <li class="catalog-card catalog__card">
@@ -64,7 +64,7 @@
                   <p class="catalog-card__elem">Вкус<span>Курица</span></p>
                   <p class="catalog-card__elem">Цена<span>700&nbsp;₽</span></p>
                 </div>
-                <button class="button catalog-card__button" type="button">Заказать</button>
+                <button class="button catalog-card__button button--primary" type="button">Заказать</button>
               </li>
               <li class="catalog-card catalog__card">
                 <div class="catalog-card__img">
@@ -80,7 +80,7 @@
                   <p class="catalog-card__elem">Вкус<span>Курица</span></p>
                   <p class="catalog-card__elem">Цена<span>1000&nbsp;₽</span></p>
                 </div>
-                <button class="button catalog-card__button" type="button">Заказать</button>
+                <button class="button catalog-card__button button--primary" type="button">Заказать</button>
               </li>
               <li class="catalog-card catalog__card">
                 <div class="catalog-card__img">
@@ -96,7 +96,7 @@
                   <p class="catalog-card__elem">Вкус<span>Рыба</span></p>
                   <p class="catalog-card__elem">Цена<span>700&nbsp;₽</span></p>
                 </div>
-                <button class="button catalog-card__button" type="button">Заказать</button>
+                <button class="button catalog-card__button button--primary" type="button">Заказать</button>
               </li>
               <li class="catalog-card catalog__card">
                 <div class="catalog-card__img">
@@ -112,7 +112,7 @@
                   <p class="catalog-card__elem">Вкус<span>Рыба</span></p>
                   <p class="catalog-card__elem">Цена<span>1000&nbsp;₽</span></p>
                 </div>
-                <button class="button catalog-card__button" type="button">Заказать</button>
+                <button class="button catalog-card__button button--primary" type="button">Заказать</button>
               </li>
               <li class="catalog-card catalog__card">
                 <div class="catalog-card__img">
@@ -128,7 +128,7 @@
                   <p class="catalog-card__elem">Вкус<span>Гречка</span></p>
                   <p class="catalog-card__elem">Цена<span>400&nbsp;₽</span></p>
                 </div>
-                <button class="button catalog-card__button" type="button">Заказать</button>
+                <button class="button catalog-card__button button--primary" type="button">Заказать</button>
               </li>
               <li class="catalog-card catalog__card">
                 <div class="catalog-card__img">
@@ -144,7 +144,7 @@
                   <p class="catalog-card__elem">Вкус<span>Гречка</span></p>
                   <p class="catalog-card__elem">Цена<span>700&nbsp;₽</span></p>
                 </div>
-                <button class="button catalog-card__button" type="button">Заказать</button>
+                <button class="button catalog-card__button button--primary" type="button">Заказать</button>
               </li>
               <li class="catalog-card catalog__card">
                 <div class="catalog-card__img">
@@ -160,63 +160,67 @@
                   <p class="catalog-card__elem">Вкус<span>Рис</span></p>
                   <p class="catalog-card__elem">Цена<span>500&nbsp;₽</span></p>
                 </div>
-                <button class="button catalog-card__button" type="button">Заказать</button>
+                <button class="button catalog-card__button button--primary" type="button">Заказать</button>
               </li>
               <li class="catalog-card catalog__card catalog__card--all">
-                <div class="catalog-card__img--all"></div>
+                <div class="catalog-card__img-all"></div>
                 <div class="catalog-card__description catalog-card__description--all">
                   <h3 class="catalog-card__caption">Показать еще 100500 товаров</h3>
                   <p class="catalog-card__elem">На&nbsp;самом деле вкусов гораздо больше!</p>
                 </div>
-                <button class="button catalog-card__button secondary-button" type="button">Показать все</button>
+                <button class="button catalog-card__button button--primary secondary-button" type="button">Показать все</button>
               </li>
             </ul>
           </div>
         </section>
-        <section class="addition">
-          <h2 class="addition__title">Дополнительные товары</h2>
-          <div class="addition__wrapper">
-            <ul class="addition__list list-reset">
-              <li class="addition__item">
-                <span class="addition__caption">Сахарозаменитель</span>
-                <span class="addition__text">1&nbsp;упаковка (100&nbsp;г)</span>
-                <span class="addition__text addition__text--price">200&nbsp;₽</span>
-                <button class="button addition__button" type="button">Заказать</button>
-              </li>
-              <li class="addition__item">
-                <span class="addition__caption">Питьевая вода</span>
-                <span class="addition__text">5&nbsp;литров</span>
-                <span class="addition__text addition__text--price">50&nbsp;₽</span>
-                <button class="button addition__button" type="button">Заказать</button>
-              </li>
-              <li class="addition__item">
-                <span class="addition__caption">Молоко</span>
-                <span class="addition__text">1&nbsp;литр</span>
-                <span class="addition__text addition__text--price">100&nbsp;₽</span>
-                <button class="button addition__button" type="button">Заказать</button>
-              </li>
-              <li class="addition__item">
-                <span class="addition__caption">Витамины</span>
-                <span class="addition__text">1&nbsp;упаковка (30&nbsp;г)</span>
-                <span class="addition__text addition__text--price">300&nbsp;₽</span>
-                <button class="button addition__button" type="button">Заказать</button>
-              </li>
-            </ul>
-            <div class="addition__card addition-card">
-              <p>Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
+        <section class="addition addition--decor">
+          <div class="container">
+            <h2 class="addition__title">Дополнительные товары</h2>
+            <div class="addition__wrapper">
+              <ul class="addition__list list-reset">
+                <li class="addition__item">
+                  <span class="addition__caption">Сахарозаменитель</span>
+                  <span class="addition__text">1&nbsp;упаковка (100&nbsp;г)</span>
+                  <span class="addition__text addition__text--price">200&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+                <li class="addition__item">
+                  <span class="addition__caption">Питьевая вода</span>
+                  <span class="addition__text">5&nbsp;литров</span>
+                  <span class="addition__text addition__text--price">50&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+                <li class="addition__item">
+                  <span class="addition__caption">Молоко</span>
+                  <span class="addition__text">1&nbsp;литр</span>
+                  <span class="addition__text addition__text--price">100&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+                <li class="addition__item">
+                  <span class="addition__caption">Витамины</span>
+                  <span class="addition__text">1&nbsp;упаковка (30&nbsp;г)</span>
+                  <span class="addition__text addition__text--price">300&nbsp;₽</span>
+                  <button class="button addition__button button--primary" type="button">Заказать</button>
+                </li>
+              </ul>
+              <div class="addition__card addition-card">
+                <p>Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="subscribe">
-          <h2 class="subscribe__title">Акции и&nbsp;новинки</h2>
-          <div class="subscribe__wrapper">
-            <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-            <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
-              <label>
-                <input class="subscribe__input" type="email" name="email" value="kuklachev@gmail.com" placeholder="Введите E-mail" required>
-              </label>
-              <button class="button subscribe__button" type="submit">Подписаться</button>
-            </form>
+        <section class="subscribe subscribe--decor">
+          <div class="container">
+            <h2 class="subscribe__title">Акции и&nbsp;новинки</h2>
+            <div class="subscribe__wrapper">
+              <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+              <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+                <label>
+                  <input class="subscribe__input" type="email" name="email" value="kuklachev@gmail.com" placeholder="Введите E-mail" required>
+                </label>
+                <button class="button subscribe__button button--primary" type="submit">Подписаться</button>
+              </form>
+            </div>
           </div>
         </section>
       </div>
@@ -224,31 +228,30 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer__container">
-        <article class="cooperation cooperation--dark">
-          <div class="cooperation__wrapper">
-            <h4 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h4>
-            <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
-              <span>Санкт-Петербург</span>
-            </address>
-          </div>
-        </article>
-        <map name="map"></map>
-        <div class="footer__elements">
-          <a class="footer__element logo footer__logo" href="#" aria-label="Логотип компании">
-            <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
-          </a>
-          <ul class="footer__element social-links list-reset">
-            <li class="social-links__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу в контакте."></a></li>
-            <li class="social-links__item"><a class="social-link social-link--youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
-            <li class="social-links__item"><a class="social-link social-link--tg" href="#" aria-label="Переход на страницу в телеграм."></a></li>
-          </ul>
-          <a class="footer__element footer-link" href="#">HTML Academy</a>
-        </div>
+    <article class="cooperation cooperation--dark container">
+      <div class="cooperation__wrapper cooperation__wrapper--dark">
+        <h4 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h4>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8
+          <span>Санкт-Петербург</span>
+        </address>
+      </div>
+    </article>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757454!2d30.314833977322365!3d59.968268659713615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1734599125073!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer__elements">
+      <div class="footer__wrapper footer__wrapper--catalog container">
+        <a class="footer__element logo footer__logo" href="#" aria-label="Логотип компании">
+          <img src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy.">
+        </a>
+        <ul class="footer__element social-links list-reset">
+          <li class="social-links__item"><a class="social-link social-link--vk" href="#" aria-label="Переход на страницу в контакте."></a></li>
+          <li class="social-links__item"><a class="social-link social-link--youtube" href="#" aria-label="Переход на страницу в youtube."></a></li>
+          <li class="social-links__item"><a class="social-link social-link--tg" href="#" aria-label="Переход на страницу в телеграм."></a></li>
+        </ul>
+        <a class="footer__element footer-link" href="#">HTML Academy</a>
       </div>
     </div>
   </footer>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

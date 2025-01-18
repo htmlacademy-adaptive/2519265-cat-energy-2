@@ -72,17 +72,24 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .example {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 462px;
+      background-color: #e2e2e2;
+      z-index: -1;
+    }
+  }
+
   .example-slider__container {
     position: relative;
     padding-bottom: 97px;
-  }
-
-  .example-slider__container::before {
-    content: "";
-    position: absolute;
-    inset: 151px -29px 0;
-    background-color: #e2e2e2;
-    z-index: -1;
   }
 
   .example-slider__button {
@@ -101,5 +108,9 @@
 
   .example-slider__container::before {
     background-color: inherit;
+  }
+
+  .example-slider__button {
+    max-height: 80%;
   }
 }

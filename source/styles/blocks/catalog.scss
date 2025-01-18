@@ -1,6 +1,6 @@
 .catalog__title {
-  margin: 0 -20px;
-  padding: 25px 20px 38px;
+  padding-top: 33px;
+  padding-bottom: 38px;
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
   font-weight: 400;
@@ -14,10 +14,6 @@
   .catalog__title {
     padding-top: 35px;
     border: none;
-  }
-
-  .catalog-card__description--all {
-    padding: 0 16%;
   }
 }
 

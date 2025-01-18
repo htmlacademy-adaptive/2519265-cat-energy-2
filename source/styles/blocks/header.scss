@@ -1,26 +1,24 @@
 .header__inner {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-top: 13px;
   padding-bottom: 2px;
-  letter-spacing: -1px;
 }
 
-.header__inner--container {
-  padding-bottom: 10px;
-}
-
-.button--menu {
+.button-menu {
   position: relative;
   width: 25px;
   height: 25px;
+  margin-left: auto;
   padding: 0;
+  border: none;
   background-color: $light-color;
 
   & span {
     position: absolute;
-    top: 35%;
     display: block;
     width: 25px;
     height: 2px;
@@ -30,7 +28,6 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
     display: block;
     width: 25px;
     height: 2px;
@@ -40,7 +37,6 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 7px;
     display: block;
     width: 25px;
     height: 2px;
@@ -48,21 +44,71 @@
   }
 }
 
+.button-menu--closed span {
+  top: 35%;
+}
+
+.button-menu--closed::before {
+  top: 0;
+}
+
+.button-menu--closed::after {
+  top: 17px;
+}
+
+.button-menu--open span {
+  display: none;
+}
+
+.button-menu--open::before {
+  transform: rotate(45deg);
+  top: 10px;
+  left: 4px;
+}
+
+.button-menu--open::after {
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 4px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .button-menu--nojs {
+    display: none;
+  }
+}
+
 @media screen and (min-width: $tablet-width) {
   .header__inner {
     padding-top: 25px;
     padding-bottom: 25px;
+    align-items: flex-start;
     justify-content: flex-start;
   }
 
-  .button--menu {
+  .button-menu {
     display: none;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-  .header__inner {
+  .header--index {
     position: relative;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 50.5%;
+    //   right: 0;
+    //   width: 49.5%;
+    //   height: 100%;
+    //   background-color: #3f3f43;
+    //   z-index: -2;
+    // }
+  }
+
+  .header__inner {
     padding-top: 55px;
     padding-bottom: 25px;
     letter-spacing: 0;

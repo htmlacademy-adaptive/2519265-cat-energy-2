@@ -12,12 +12,16 @@
 }
 
 .logo-img {
-  margin-right: 13px;
+  margin-right: auto;
 }
 
 @media screen and (min-width: $tablet-width) {
   .logo {
     margin-right: 15px;
+  }
+
+  .logo-text {
+    padding-top: 17px;
   }
 
   .footer__logo {
@@ -26,5 +30,12 @@
 
   .footer__logo img {
     display: block;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .logo-text img {
+    width: 118px;
+    height: 21px;
   }
 }

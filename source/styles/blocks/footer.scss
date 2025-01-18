@@ -1,11 +1,14 @@
 .footer__elements {
-  margin: 0 -20px;
-  padding: 20px;
+  background-color: $basic-gray;
+}
+
+.footer__wrapper {
+  padding-top: 22px;
+  padding-bottom: 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $basic-gray;
 }
 
 .footer__element {
@@ -63,12 +66,11 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  .footer__elements {
+  .footer__wrapper {
     flex-flow: row wrap;
-    align-items: center;
     justify-content: space-between;
-    margin: 0 -29px;
-    padding: 43px 29px;
+    align-items: flex-start;
+    padding: 46px 29px;
   }
 
   .footer__element {
@@ -84,27 +86,34 @@
 
   .footer-link {
     padding-right: 33px;
+    padding-top: 17px;
 
     &::after {
       right: -16px;
+      top: 10px;
     }
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-  .footer__container {
-    margin: 0 -110px;
+  .footer {
+    position: relative;
   }
 
-  .footer__elements {
-    padding: 54px 84px 45px 150px;
+  .footer__wrapper {
+    padding: 64px 86px 54px 110px;
+  }
+
+  .footer__wrapper--catalog {
+    padding-top: 55px;
   }
 
   .footer-link {
-    padding: 0 33px 0 0;
+    padding: 20px 58px 14px 0;
 
     &::after {
-      top: -6px;
+      top: 13px;
+      right: 8px;
     }
   }
 }

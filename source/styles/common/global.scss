@@ -30,7 +30,7 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 1220px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -38,12 +38,14 @@ body {
 
 @media screen and (min-width: $tablet-width) {
   .container {
-    padding: 0 29px;
+    padding-left: 29px;
+    padding-right: 10px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .container {
-    padding: 0;
+    padding-left: 110px;
+    padding-right: 90px;
   }
 }
