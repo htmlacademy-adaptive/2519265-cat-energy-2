@@ -92,22 +92,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .header--index {
-    position: relative;
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 0;
-    //   left: 50.5%;
-    //   right: 0;
-    //   width: 49.5%;
-    //   height: 100%;
-    //   background-color: #3f3f43;
-    //   z-index: -2;
-    // }
-  }
-
   .header__inner {
     padding-top: 55px;
     padding-bottom: 25px;
