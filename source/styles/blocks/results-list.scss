@@ -1,0 +1,19 @@
+.results-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .results-list {
+    gap: 43px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .results-list {
+    max-width: 84%;
+    margin: 0;
+  }
+}

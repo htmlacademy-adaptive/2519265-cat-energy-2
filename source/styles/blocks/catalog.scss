@@ -1,0 +1,25 @@
+.catalog__title {
+  padding-top: 33px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  font-weight: 400;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .catalog__wrapper {
+    margin-bottom: 73px;
+  }
+
+  .catalog__title {
+    padding-top: 35px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .catalog__title {
+    padding-top: 45px;
+    padding-bottom: 37px;
+  }
+}

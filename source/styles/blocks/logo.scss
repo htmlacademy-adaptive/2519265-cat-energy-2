@@ -1,0 +1,41 @@
+.logo {
+  display: block;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 80%;
+  }
+}
+
+.logo-img {
+  margin-right: auto;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .logo {
+    margin-right: 15px;
+  }
+
+  .logo-text {
+    padding-top: 17px;
+  }
+
+  .footer__logo {
+    margin-right: 38px;
+  }
+
+  .footer__logo img {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .logo-text img {
+    width: 118px;
+    height: 21px;
+  }
+}

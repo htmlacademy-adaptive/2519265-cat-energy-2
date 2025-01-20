@@ -1,5 +1,100 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.header__inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 2px;
+}
+
+.button-menu {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: $light-color;
+
+  & span {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $dark-color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $dark-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $dark-color;
+  }
+}
+
+.button-menu--closed span {
+  top: 35%;
+}
+
+.button-menu--closed::before {
+  top: 0;
+}
+
+.button-menu--closed::after {
+  top: 17px;
+}
+
+.button-menu--open span {
+  display: none;
+}
+
+.button-menu--open::before {
+  transform: rotate(45deg);
+  top: 10px;
+  left: 4px;
+}
+
+.button-menu--open::after {
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 4px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .button-menu--nojs {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .header__inner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .button-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .header__inner {
+    padding-top: 55px;
+    padding-bottom: 25px;
+    letter-spacing: 0;
+  }
 }

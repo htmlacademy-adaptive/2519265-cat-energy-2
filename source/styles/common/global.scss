@@ -1,1 +1,51 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $light-color;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .container {
+    padding-left: 29px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .container {
+    padding-left: 110px;
+    padding-right: 90px;
+  }
+}

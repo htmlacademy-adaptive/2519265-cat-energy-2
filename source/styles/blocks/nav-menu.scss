@@ -1,0 +1,119 @@
+.nav-menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  padding-top: 12px;
+  width: auto;
+  z-index: 10;
+  background-color: $light-color;
+}
+
+.nav-menu--closed {
+  display: none;
+}
+
+.nav-menu--open {
+  display: block;
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu__item {
+  padding: 21px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  background-color: $light-color;
+}
+
+.nav-menu__link {
+  font-family: $primary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-color;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .nav-menu--nojs.nav-menu {
+    position: static;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .nav-menu {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding-top: 10px;
+  }
+
+  .nav-menu__list {
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    gap: 33px;
+    margin-right: 9px;
+    letter-spacing: -1px;
+  }
+
+  .nav-menu__item {
+    width: auto;
+    padding: 5px 0;
+    border: none;
+  }
+
+  .nav-menu__link--current {
+    border-bottom: 2px solid $basic-green;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .nav-menu {
+    width: 50%;
+    background-color: transparent;
+  }
+
+  .nav-menu__list {
+    width: 100%;
+    justify-content: flex-end;
+    background-color: transparent;
+    margin-right: 2px;
+    letter-spacing: 0;
+  }
+
+  .nav-menu__item {
+    background-color: transparent;
+  }
+
+  .nav-menu__link {
+    display: block;
+    padding: 8px 0 10px;
+  }
+
+  .header--index .nav-menu__link {
+    color: $light-color;
+  }
+
+  .header--index .nav-menu__link--current {
+    border-bottom: 2px solid $light-color;
+  }
+}

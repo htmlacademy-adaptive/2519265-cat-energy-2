@@ -1,0 +1,166 @@
+.addition--decor {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+    overflow: hidden;
+    z-index: -5;
+  }
+}
+
+.addition__wrapper {
+  margin-bottom: 41px;
+}
+
+.addition__title {
+  display: inline-block;
+  margin: 0;
+  margin-left: -40px;
+  padding: 25px 40px 35px;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: $light-color;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.addition__list {
+  margin-bottom: 33px;
+}
+
+.addition__item {
+  display: grid;
+  grid-template-areas:
+    "caption caption"
+    "text    price"
+    "button  button";
+  row-gap: 13px;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.addition__caption {
+  grid-area: caption;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.addition__text {
+  grid-area: text;
+  justify-self: flex-start;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
+
+.addition__text--price {
+  grid-area: price;
+  justify-self: flex-end;
+}
+
+.addition__button {
+  grid-area: button;
+  padding: 10px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .addition__wrapper {
+    padding-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .addition__title {
+    margin-left: 0;
+    margin-bottom: 80px;
+    font-size: 32px;
+    line-height: 32px;
+    border-bottom: none;
+  }
+
+  .addition__list {
+    margin-bottom: 70px;
+  }
+
+  .addition__item {
+    grid-template-columns: 1fr 1fr 90px;
+    grid-template-areas:
+      "caption text   price"
+      "button  button button";
+    gap: 28px 3px;
+    justify-content: end;
+    align-items: end;
+    padding: 25px 38px;
+    border: 1px solid #ebebeb;
+
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+  }
+
+  .addition__caption {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .addition__text {
+    justify-self: end;
+    font-size: 16px;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .addition__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .addition__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+    margin-bottom: 95px;
+  }
+
+  .addition__list {
+    margin-bottom: 0;
+  }
+
+  .addition__item {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 244px;
+    grid-template-areas: "caption text price button";
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    gap: 17px;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .addition__text {
+    padding-left: 35px;
+    justify-self: start;
+  }
+
+  .addition__text:nth-child(2n) {
+    justify-self: start;
+    padding-left: 8px;
+  }
+
+  .addition__button {
+    min-width: 244px;
+  }
+}

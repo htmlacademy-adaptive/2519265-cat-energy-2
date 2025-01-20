@@ -1,0 +1,37 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.social-link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $special_grey;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green;
+    opacity: 30%;
+  }
+}
+
+.social-link--vk {
+  mask-image: url("../../icons/stack.svg#icon-logo-vk");
+}
+
+.social-link--youtube {
+  mask-image: url("../../icons/stack.svg#icon-logo-youtube");
+}
+
+.social-link--tg {
+  mask-image: url("../../icons/stack.svg#icon-logo-tg");
+}

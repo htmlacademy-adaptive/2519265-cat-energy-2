@@ -1,0 +1,121 @@
+.example__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 -20px;
+  padding: 0 20px 45px;
+  background-color: #eaeaea;
+}
+
+.example__description {
+  padding-top: 25px;
+}
+
+.example-title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin-bottom: 20px;
+  color: $special_dark-grey;
+}
+
+.example__costs {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $dark-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .example__wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .example__description {
+    padding-top: 45px;
+    margin-bottom: 72px;
+    background-color: transparent;
+  }
+
+  .example-title {
+    margin-bottom: 60px;
+  }
+
+  .example__text {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__costs {
+    justify-self: end;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__costs span {
+    justify-self: end;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .example {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      inset: 164px -110px 0;
+      background-color: #e2e2e2;
+      z-index: -1;
+      top: 164px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  .example__wrapper {
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .example__description {
+    max-width: 35%;
+    padding-top: 26px;
+    margin-bottom: 25px;
+  }
+
+  .example-title {
+    margin-bottom: 144px;
+  }
+
+  .example__text {
+    margin-bottom: 70px;
+  }
+
+  .example__costs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: flex-start;
+    gap: 65px;
+    margin: 0;
+  }
+
+  .example__costs span {
+    justify-self: flex-start;
+    margin: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.button--primary {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $light-color;
+  background-color: $basic-green;
+  border: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+.secondary-button {
+  color: $special_dark-grey;
+  background-color: $basic-gray;
+  border: none;
+}
