@@ -7,10 +7,11 @@
 }
 
 .social-link {
+  // position: relative;
   display: block;
   width: 28px;
   height: 22px;
-  background-color: $special_grey;
+  background-color: $special_dark-grey;
   mask-repeat: no-repeat;
   mask-position: center;
 
@@ -21,6 +22,10 @@
   &:active {
     background-color: $basic-green;
     opacity: 30%;
+  }
+
+  &:focus {
+    background-color: $basic-green;
   }
 }
 

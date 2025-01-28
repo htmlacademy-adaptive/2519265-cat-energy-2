@@ -1,0 +1,82 @@
+.advantage-item {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 3px;
+  margin-bottom: 23px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.advantage-item--leaf::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+  }
+
+  &.advantage-item--bubbles::before {
+    background-image: url("../../icons/stack.svg#icon-bubbles");
+    background-size: 26px 29px;
+  }
+
+  &.advantage-item--tableware::before {
+    background-image: url("../../icons/stack.svg#icon-tableware");
+    background-size: 25px 30px;
+  }
+
+  &.advantage-item--time::before {
+    background-image: url("../../icons/stack.svg#icon-time");
+    background-size: 26px 31px;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .advantage-item {
+    min-height: 280px;
+    padding: 142px 60px 60px 0;
+    padding-top: 142px;
+    padding-bottom: 60px;
+    background-color: transparent;
+    z-index: 2;
+
+    &::before {
+      top: 30px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(item);
+      position: absolute;
+      top: -11px;
+      right: 74px;
+      display: block;
+      width: 134px;
+      height: 100%;
+      counter-increment: item 1;
+      font-family: $primary-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-gray;
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .advantage-item {
+    padding-right: 0;
+
+    &::after {
+      right: 0;
+    }
+  }
+}

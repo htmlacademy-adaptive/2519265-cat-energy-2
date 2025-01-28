@@ -1,0 +1,16 @@
+.advantages-title {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .advantages-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .advantages-title {
+    margin-bottom: 42px;
+  }
+}

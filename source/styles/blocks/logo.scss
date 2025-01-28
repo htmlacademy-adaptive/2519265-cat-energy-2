@@ -1,6 +1,7 @@
 .logo {
   display: block;
   transition: all 0.3s ease-in-out;
+  margin-right: auto;
 
   &:hover {
     opacity: 60%;
@@ -11,8 +12,8 @@
   }
 }
 
-.logo-img {
-  margin-right: auto;
+.logo--text {
+  margin-right: 8px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -20,21 +21,21 @@
     margin-right: 15px;
   }
 
-  .logo-text {
+  .logo--text {
     padding-top: 17px;
   }
 
   .footer__logo {
     margin-right: 38px;
-  }
 
-  .footer__logo img {
-    display: block;
+    & img {
+      display: block;
+    }
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-  .logo-text img {
+  .logo--text img {
     width: 118px;
     height: 21px;
   }

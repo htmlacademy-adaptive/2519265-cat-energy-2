@@ -28,7 +28,7 @@
   object-fit: contain;
 }
 
-.footer-link {
+.footer__link {
   position: relative;
   padding-top: 29px;
   font-size: 16px;
@@ -84,7 +84,7 @@
     }
   }
 
-  .footer-link {
+  .footer__link {
     padding-right: 33px;
     padding-top: 17px;
 
@@ -101,14 +101,14 @@
   }
 
   .footer__wrapper {
-    padding: 64px 86px 54px 110px;
+    padding: 55px 86px 54px 110px;
   }
 
   .footer__wrapper--catalog {
-    padding-top: 55px;
+    padding: 55px 95px 54px 102px;
   }
 
-  .footer-link {
+  .footer__link {
     padding: 20px 58px 14px 0;
 
     &::after {

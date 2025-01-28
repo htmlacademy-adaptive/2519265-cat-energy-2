@@ -1,3 +1,10 @@
+.button {
+  display: block;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
 .button--primary {
   font-family: $primary-font;
   font-size: 16px;
@@ -5,7 +12,6 @@
   text-transform: uppercase;
   color: $light-color;
   background-color: $basic-green;
-  border: none;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &:hover {
@@ -17,8 +23,7 @@
   }
 }
 
-
-.secondary-button {
+.button--secondary {
   color: $special_dark-grey;
   background-color: $basic-gray;
   border: none;

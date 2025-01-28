@@ -29,7 +29,7 @@
   word-wrap: break-word;
 }
 
-.catalog .cooperation--dark {
+.cooperation--dark {
   background-color: $basic-gray;
 }
 
@@ -40,7 +40,7 @@
 
   .cooperation__wrapper {
     gap: 310px;
-    padding: 62px 53px 60px 70px;
+    padding: 62px 43px 60px 41px;
   }
 
   .cooperation__title {
@@ -67,7 +67,11 @@
 @media screen and (min-width: $desktop-width) {
   .cooperation {
     position: relative;
-    top: 97px;
+    top: 95px;
+  }
+
+  .cooperation--catalog {
+    left: -9px;
   }
 
   .cooperation__wrapper {
@@ -77,7 +81,7 @@
     max-width: 565px;
     z-index: 5;
     gap: 90px;
-    padding: 62px 80px 56px;
+    padding: 62px 74px 56px 80px;
     background-color: $light-color;
   }
 
