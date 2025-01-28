@@ -3,13 +3,13 @@ const navMain = document.querySelector('.nav-menu');
 const navToggle = document.querySelector('.button-menu');
 
 const map = document.querySelector('.map');
-const mapImage = document.querySelector('.map__image');
+const mapImage = document.querySelector('.map-container__image');
 
 navMain.classList.remove('nav-menu--nojs');
 navToggle.classList.remove('button-menu--nojs');
 
 map.classList.remove('map--nojs');
-mapImage.classList.remove('map__image--nojs');
+mapImage.classList.remove('map-container__image--nojs');
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('nav-menu--closed')) {

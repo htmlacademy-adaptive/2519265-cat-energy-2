@@ -10,11 +10,11 @@
   display: none;
 }
 
-.map__image {
+.map-container__image {
   display: none;
 }
 
-.map__image--nojs {
+.map-container__image--nojs {
   display: block;
   margin: 0 auto;
   object-fit: cover;

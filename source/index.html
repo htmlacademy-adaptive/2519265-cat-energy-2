@@ -162,15 +162,17 @@
         </address>
       </div>
     </article>
-    <iframe class="map map--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757454!2d30.314833977322365!3d59.968268659713615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1734599125073!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <picture>
-      <source type="image/webp" media="(min-width: 1200px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
-      <source media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpg">
-      <source media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400" type="image/jpg">
-      <img class="map__image map__image--nojs" src="images/map-mobile@1x.jpg" srcset="images/map-tablet@2x.jpg 2x" width="320" height="362" alt="Карта с указанием локации.">
-    </picture>
+    <div class="map-container">
+      <iframe class="map map--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757454!2d30.314833977322365!3d59.968268659713615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1734599125073!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpg">
+        <source media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400" type="image/jpg">
+        <img class="map-container__image map-container__image--nojs" src="images/map-mobile@1x.jpg" srcset="images/map-tablet@2x.jpg 2x" width="320" height="362" alt="Карта с указанием локации.">
+      </picture>
+    </div>
     <div class="footer__elements">
       <div class="footer__wrapper container">
         <a class="footer__element logo footer__logo" href="#" aria-label="Логотип компании">
