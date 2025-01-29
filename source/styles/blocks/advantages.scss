@@ -2,50 +2,6 @@
   margin-bottom: 60px;
 }
 
-.advantages-title {
-  margin-bottom: 40px;
-}
-
-.advantage-item {
-  position: relative;
-  padding-left: 80px;
-  padding-top: 3px;
-  margin-bottom: 23px;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 60px;
-    height: 60px;
-    background-color: $basic-green;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &.advantage-item--leaf::before {
-    background-image: url("../../icons/stack.svg#icon-leaf");
-    background-size: 30px 32px;
-  }
-
-  &.advantage-item--bubbles::before {
-    background-image: url("../../icons/stack.svg#icon-bubbles");
-    background-size: 26px 29px;
-  }
-
-  &.advantage-item--tableware::before {
-    background-image: url("../../icons/stack.svg#icon-tableware");
-    background-size: 25px 30px;
-  }
-
-  &.advantage-item--time::before {
-    background-image: url("../../icons/stack.svg#icon-time");
-    background-size: 26px 31px;
-  }
-}
-
 .advantage-item__text {
   margin: 0;
   font-size: 14px;
@@ -66,47 +22,11 @@
     padding-bottom: 13px;
   }
 
-  .advantages-title {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px 57px;
     counter-reset: item 0;
-  }
-
-  .advantage-item {
-    min-height: 280px;
-    padding: 142px 60px 60px 0;
-    padding-top: 142px;
-    padding-bottom: 60px;
-    background-color: transparent;
-    z-index: 2;
-
-    &::before {
-      top: 30px;
-      width: 80px;
-      height: 80px;
-    }
-
-    &::after {
-      content: counter(item);
-      position: absolute;
-      top: -10px;
-      right: 79px;
-      display: block;
-      width: 134px;
-      height: 100%;
-      counter-increment: item 1;
-      font-family: $primary-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-gray;
-      z-index: -1;
-    }
   }
 
   .advantage-item__text {
@@ -123,19 +43,12 @@
   }
 
   .advantages__wrapper {
-    margin-bottom: 0;
+    margin-bottom: 37px;
+    padding-bottom: 0;
   }
 
   .advantages__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px 77px;
-  }
-
-  .advantage-item {
-    padding-right: 0;
-
-    &::after {
-      right: 0;
-    }
   }
 }

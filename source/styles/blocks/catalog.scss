@@ -1,5 +1,5 @@
 .catalog__title {
-  padding-top: 33px;
+  padding-top: 25px;
   padding-bottom: 38px;
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
@@ -8,11 +8,12 @@
 
 @media screen and (min-width: $tablet-width) {
   .catalog__wrapper {
-    margin-bottom: 73px;
+    margin-bottom: 48px;
   }
 
   .catalog__title {
     padding-top: 35px;
+    padding-bottom: 41px;
     border: none;
   }
 }
@@ -20,6 +21,6 @@
 @media screen and (min-width: $desktop-width) {
   .catalog__title {
     padding-top: 45px;
-    padding-bottom: 37px;
+    padding-bottom: 39px;
   }
 }

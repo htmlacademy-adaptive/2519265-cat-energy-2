@@ -1,13 +1,9 @@
 .addition-card {
+  position: relative;
   font-size: 16px;
   line-height: 20px;
   color: $light-color;
-  background-image: url("../../images/gift-bg-mobile@2x.jpg");
-  background-blend-mode: overlay;
   background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   &::before {
     content: "";
@@ -17,6 +13,17 @@
     background-image: url("../../icons/stack.svg#icon-gift");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../../images/gift-bg-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
   }
 }
 
@@ -39,6 +46,10 @@
     min-height: 200px;
     flex-direction: row;
     padding: 42px 120px 42px 81px;
+
+    &::after {
+      background-image: url("../../images/gift-bg-tablet@2x.jpg");
+    }
   }
 
   .addition__card p {
@@ -52,6 +63,10 @@
     flex-direction: column;
     min-height: 100px;
     padding: 57px 30px 43px;
+
+    &::after {
+      background-image: url("../../images/gift-bg@2x.jpg");
+    }
   }
 
   .addition__card p {
