@@ -16,6 +16,7 @@
     "descr"
     "button";
   row-gap: 20px;
+  height: 100%;
   padding-top: 80px;
   padding-bottom: 4px;
 }
@@ -200,7 +201,7 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .catalog-card {
+  .catalog-card__wrapper {
     row-gap: 8px;
   }
 
