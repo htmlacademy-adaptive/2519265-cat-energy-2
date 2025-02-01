@@ -127,6 +127,10 @@
 }
 
 @media screen and (min-width: $desktop-width) {
+  .addition--decor::before {
+    top: 41px;
+  }
+
   .addition__title {
     margin-left: -40px;
     font-size: 40px;

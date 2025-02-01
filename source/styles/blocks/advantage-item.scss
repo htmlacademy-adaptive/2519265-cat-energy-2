@@ -38,6 +38,14 @@
   }
 }
 
+.advantage-item__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
 @media screen and (min-width: $tablet-width) {
   .advantage-item {
     min-height: 280px;
@@ -68,6 +76,11 @@
       color: $basic-gray;
       z-index: -1;
     }
+  }
+
+  .advantage-item__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

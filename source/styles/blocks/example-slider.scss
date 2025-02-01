@@ -1,11 +1,11 @@
-.slider {
+.example-slider {
   --value: 50%;
   position: relative;
   width: 280px;
   height: 256px;
 }
 
-.slider__img {
+.example-slider__img {
   position: absolute;
   top: 0;
   max-width: none;
@@ -13,19 +13,19 @@
   object-fit: cover;
 }
 
-.slider__img--before {
+.example-slider__img--before {
   left: 0;
   width: var(--value);
   object-position: left;
 }
 
-.slider__img--after {
+.example-slider__img--after {
   right: 0;
   width: calc(100% - var(--value));
   object-position: right;
 }
 
-.slider__range-visible {
+.example-slider__range-visible {
   position: absolute;
   top: 0;
   left: var(--value);
@@ -69,7 +69,7 @@
   }
 }
 
-.slider__range-js {
+.example-slider__range-js {
   position: absolute;
   margin: 0;
   cursor: pointer;
@@ -80,29 +80,29 @@
     background-color: $basic-green;
   }
 
-  &:hover + .slider__range-visible,
-  &:hover + .slider__range-visible::before {
+  &:hover + .example-slider__range-visible,
+  &:hover + .example-slider__range-visible::before {
     background-color: $basic-green;
   }
 
-  &:hover + .slider__range-visible::after {
+  &:hover + .example-slider__range-visible::after {
     border-color: $basic-green;
   }
 
-  &:active + .slider__range-visible,
-  &:active + .slider__range-visible::before {
+  &:active + .example-slider__range-visible,
+  &:active + .example-slider__range-visible::before {
     background-color: $light-green;
     opacity: 60%;
   }
 
-  &:active + .slider__range-visible::after {
+  &:active + .example-slider__range-visible::after {
     border-color: $light-green;
     opacity: 60%;
   }
 }
 
 @media screen and (min-width: $tablet-width) {
-  .slider {
+  .example-slider {
     margin: 0 auto;
     width: 560px;
     height: 512px;
@@ -110,7 +110,7 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .slider {
+  .example-slider {
     width: 560px;
     height: 512px;
     margin-right: 3px;

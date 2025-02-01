@@ -10,16 +10,6 @@
   display: none;
 }
 
-.map-container__image {
-  display: none;
-}
-
-.map-container__image--nojs {
-  display: block;
-  margin: 0 auto;
-  object-fit: cover;
-}
-
 @media screen and (min-width: $tablet-width) {
   .map {
     height: 400px;

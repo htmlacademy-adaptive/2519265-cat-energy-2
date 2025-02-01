@@ -20,14 +20,6 @@
   }
 }
 
-.footer__logo {
-  text-align: center;
-}
-
-.footer__logo img {
-  object-fit: contain;
-}
-
 .footer__link {
   position: relative;
   padding-top: 29px;
@@ -49,7 +41,7 @@
     height: 34px;
     top: 23px;
     right: 0;
-    background-color: $special_grey;
+    background-color: #666666;
     mask-repeat: no-repeat;
     mask-position: center;
     mask-image: url("../../icons/stack.svg#icon-logo-htmlacademy");
@@ -70,7 +62,9 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 46px 29px;
+    // padding: 46px 29px;
+    padding-top: 46px;
+    padding-bottom: 46px;
   }
 
   .footer__element {
@@ -85,11 +79,10 @@
   }
 
   .footer__link {
-    padding-right: 33px;
+    padding-right: 51px;
     padding-top: 17px;
 
     &::after {
-      right: -16px;
       top: 10px;
     }
   }
@@ -101,19 +94,17 @@
   }
 
   .footer__wrapper {
-    padding: 55px 86px 54px 110px;
-  }
-
-  .footer__wrapper--catalog {
-    padding: 55px 95px 54px 102px;
+    // padding: 55px 86px 54px 110px;
+    padding-top: 55px;
+    padding-bottom: 54px;
   }
 
   .footer__link {
-    padding: 20px 58px 14px 0;
+    padding: 20px 54px 14px 0;
 
     &::after {
       top: 13px;
-      right: 8px;
+      right: 3px;
     }
   }
 }

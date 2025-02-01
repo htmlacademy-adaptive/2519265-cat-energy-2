@@ -12,8 +12,12 @@
   }
 }
 
-.logo--text {
-  margin-right: 8px;
+.footer__logo {
+  text-align: center;
+}
+
+.footer__logo img {
+  object-fit: contain;
 }
 
 @media screen and (min-width: $tablet-width) {
