@@ -93,7 +93,7 @@
       position: absolute;
       display: block;
       inset: 162px -110px 0;
-      background-color: #e2e2e2;
+      background-color: $basic-gray;
       z-index: -1;
       top: 135px;
       left: 0;
@@ -116,7 +116,7 @@
   }
 
   .example__title {
-    margin-bottom: 144px;
+    margin-bottom: 147px;
   }
 
   .example__text {

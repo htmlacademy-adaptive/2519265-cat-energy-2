@@ -38,19 +38,15 @@ body {
 
 @media screen and (min-width: $tablet-width) {
   .container {
-    padding-left: 29px;
-    padding-right: 10px;
+    // padding-left: 29px;
+    // padding-right: 10px;
+    padding: 0 29px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .container {
     padding-left: 110px;
-    padding-right: 90px;
-  }
-
-  .container--catalog {
-    padding-left: 102px;
-    padding-right: 100px;
+    padding-right: 107px;
   }
 }

@@ -27,4 +27,9 @@
   color: $special_dark-grey;
   background-color: $basic-gray;
   border: none;
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+  }
 }

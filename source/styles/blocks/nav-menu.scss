@@ -52,6 +52,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .nav-menu {
+    margin: 0 -20px;
+  }
+
   .nav-menu--nojs.nav-menu {
     position: static;
     flex-grow: 1;
@@ -84,7 +88,7 @@
   }
 
   .nav-menu__link {
-    padding-bottom: 6px;
+    padding-bottom: 1px;
   }
 
   .nav-menu__link--current {
